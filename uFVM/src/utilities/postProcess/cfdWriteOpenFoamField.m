@@ -146,7 +146,7 @@ text{end+1} = '';
 text{end+1} = '// ************************************************************************* //';
 
 % Print to time directory
-fileID = fopen([num2str(timeStep), '\', theFieldName], 'w');
+fileID = fopen([num2str(timeStep), '/', theFieldName], 'w');
 for i=1:length(text)
     fprintf(fileID, '%s\n', text{i});
 end
